@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavani Kongari | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Hero / Intro Section -->
+  <section id="intro">
+    <div class="intro-container" style="align-items: center;">
+      <div class="intro-text">
+        <h1>Bhavani Kongari</h1>
+        <p>Hi! I’m Bhavani Kongari, a passionate master’s student who loves creating innovative solutions.
+		 This portfolio showcases some of my best work, skills, and projects that I’m proud of.</p>
+<div class="intro-buttons">
+  <a href="#education" class="button primary">Education</a>
+  <a href="#projects" class="button default">Projects</a>
+  <a href="#certificates" class="button primary">Certificates</a>
+
+  <a href="#papers" class="button wide">Publications & Presentations</a>
+
+  <a href="#experience" class="button primary">Experience</a>
+  <a href="#skills" class="button default">My Skills</a>
+  <a href="#contact" class="button primary">Contact Me</a>
+</div>
+        </div>
+      
+
+      <div class="intro-image">
+        <img src="images/MyPic.jpg" alt="Bhavani Kongari">
+      </div>
+    </div>
+  </section>
+
+
+<!-- ===== EDUCATION SECTION ===== -->
+<section class="wrapper style2 align-center" id="education">
+  <div>
+    <h2 style="font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 2px;
+  margin-bottom: 10px;">EDUCATION</h2>
+    <div class="underline"></div>
+    <p>	Here’s a brief overview of my academic journey. Use the left and right buttons to 
+	navigate from my Master’s degree to schooling.</p>
+  </div>
+
+  <div class="edu-container">
+    <button class="nav-btn" id="prevBtn">&#10094;</button>
+
+    <div class="edu-content">
+      <div class="edu-item active">
+
+        <div class="edu-image">
+          <img src="images/NWMSU.png" alt="Bachelor’s Degree">
+        </div>
+        <div class="edu-text">
+          <h3 style="font-size: 40px;">MASTERS</h3>
+      <p style="font-size:20px; font-family: 'robot', sans-serif;">AUGUST 2024 – DECEMBER 2025 (Expected). <br> 
+		
+	Currently pursuing final semister of M.S. <br> in Applied Computer Science at 	<br>	
+           <a href="https://www.nwmissouri.edu/">Northwest Missouri State University</a>, Maryville, MO, USA. <br>
+           _________________________________<br><br>
+          	Major in Computer Science. <br>
+	Secured GPA: 4.0/4.0 </p>    
+</div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-image">
+          <img src="images/SREYAS.jpg" alt="Bachelor’s Degree">
+        </div>
+        <div class="edu-text">
+          <h3 style="font-size: 40px;">BACHELORS</h3>
+      <p style="font-size:20px; font-family: 'robot', sans-serif;">JUNE 2020 – MAY 2024. <br> 
+		
+Completed Bachelor of Technology in Computer Science at <br>
+          <a href="https://sreyas.ac.in/">Sreyas Institute of Engineering and Technology</a>,
+          <br>Hyderabad, India -	         
+          <a href="https://www.jntuh.ac.in/">JNTUH affiliated</a>. <br>	
+         _________________________________<br><br>
+          Major in Computer Science. <br>
+         Secured GPA: 8.49/10.0 <br>
+Second Topper of the University – Awarded Silver Medal.</p>      
+</div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-image">
+          <img src="images/SRICHAI.png" alt="Inter">
+        </div>
+        <div class="edu-text">
+          <h3 style="font-size: 40px;">INTERMEDIATE</h3>
+          <p style="font-size:20px; font-family: 'robot', sans-serif;">JUNE 2018 – MARCH 2020. <br> 
+	
+           <a href="https://srichaitanya.net/">Sri Chaitanya Junior College</a>, Hyderabad, India. <br>
+           _________________________________<br><br>	         
+           Major in MATHS, PHYSICS, CHEMISTRY (MPC). <br>
+         	Board of Intermediate Education, Telangana (BIETS).<br>
+	Secured Percentage: 95 <br>
+	Secured Score: 955/1000
+	</p>
+</div>
+      </div>
+
+            <div class="edu-item">
+        <div class="edu-image">
+          <img src="images/NAAGAR.png" alt="Inter">
+        </div>
+        <div class="edu-text">
+          <h3 style="font-size: 40px;">HIGH SCHOOL</h3>
+<p style="font-size:20px; font-family: 'robot', sans-serif;">SSC in March 2018. <br> 
+	Completed high school education from <br>
+           <a href="https://www.naagarjunaschools.co.in/">Naagarjuna High School</a>, Hyderabad, India. <br>
+           	        _________________________________<br><br>	  
+         	Board of Secondary Education, Telangana (BSE Telangana). <br>
+	Secured Percentage: 92 <br>
+	Secured CGPA: 9.2/10.0
+	</p>
+</div>
+      </div>
+
+    </div>
+
+    <button class="nav-btn" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+<script>
+  const items = document.querySelectorAll('.edu-item');
+  let index = 0;
+
+  function showItem(i) {
+    items.forEach(item => item.classList.remove('active'));
+    items[i].classList.add('active');
+  }
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    index = (index + 1) % items.length;
+    showItem(index);
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    index = (index - 1 + items.length) % items.length;
+    showItem(index);
+  });
+</script>
+
+
+
+<section style="text-align:center;margin-top: -40px; background:lavender; font-family: 'Roboto', sans-serif;" id="certificates">
+  <div>
+    <h2 style="font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 2px;
+  margin-bottom: 10px;">
+      CERTIFICATIONS
+    </h2>
+    <div style="width: 80px; height: 4px; background: #0077ff; margin: 0 auto; border-radius: 2px;"></div>
+
+    <p style="font-size:18px; padding: 10px; color:#333;">
+     	Here’s an overview of my professional certifications,
+	 highlighting the skills and knowledge I’ve gained. Use the left and right buttons to 
+	navigate from my Master’s degree to schooling. Hover on it to find more details.</p>
+  </div>
+
+  <!-- Certificates Container -->
+  <div id="cert-container" style="position: relative; max-width: 1150px; margin: 0 auto; overflow: hidden; margin-top: 20px;">
+    <div id="cert-pages" style="display:flex; transition: transform 0.6s ease; width:100%;">
+      
+      <!-- Page 1 -->
+      <div class="cert-page" style="display:flex; gap:20px; min-width: 100%; justify-content:center; flex-wrap:wrap;">
+        <div class="cert-card">
+          <img src="images/IOT.jpg" alt="IoT">
+          <div class="overlay">
+            <h3 style="font-size:20px;">NPTEL - Internet Of Things (IoT)</h3>
+            <p style="font-size:16px;">Key Skills: IoT architecture, sensors & actuators, MQTT, cloud integration, IoT applications<br>Completed in: 2023</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/IOT.jpg')">View Certificate</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/CC.jpg" alt="Cloud Computing">
+          <div class="overlay">
+            <h3 style="font-size:20px;">NPTEL - Cloud Computing (CC)</h3>
+            <p style="font-size:16px;">Key Skills: Cloud architecture, IaaS/PaaS/SaaS, virtualization, AWS/Azure concepts, deployment & management<br>Completed in: 2023</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/CC.jpg')">View Certification</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/JAVA.jpg" alt="Java">
+          <div class="overlay">
+            <h3 style="font-size:20px;">Newton School - Introduction to Java</h3>
+            <p style="font-size:16px;">Key Skills: Java basics, OOP concepts, loops, arrays, classes & objects, exception handling<br>Completed in: 2023</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/JAVA.jpg')">View Certification</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2 -->
+      <div class="cert-page" style="display:flex; gap:20px; min-width: 100%; justify-content:center; flex-wrap:wrap;">
+        <div class="cert-card">
+          <img src="images/iicc2.jpg" alt="Coding Ninjas Round 1">
+          <div class="overlay">
+            <h3 style="font-size:20px;">Coding Ninjas - Innovative India Coding Championship (Active Participation)</h3>
+            <p style="font-size:16px;">Key Skills: Problem-solving, competitive coding, algorithmic thinking<br>Completed in: 2022</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/iicc1.jpg')">View Certificate</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/iicc1.jpg" alt="Coding Ninjas Round 2">
+          <div class="overlay">
+            <h3 style="font-size:20px;">Coding Ninjas - Innovative India Coding Championship (Round 2 Participation)</h3>
+            <p style="font-size:16px;">Key Skills: Advanced problem-solving, algorithms, data structures, coding efficiency<br>Completed in: 2022</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/iicc2.jpg')">View Certificate</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/PYB.jpg" alt="Python Basics">
+          <div class="overlay">
+            <h3 style="font-size:20px;">HackerRank - Python Basics</h3>
+            <p style="font-size:16px;">Key Skills: Python syntax, loops, functions, lists, dictionaries<br>Completed in: 2023</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/PYB.jpg')">View Certificate</span>
+            <a href="https://www.hackerrank.com/certificates/f0b7fccf5c81" style="padding-top: 10px;">Certificate Link</a>
+          </div>
+        </div>
+      </div>
+           <div class="cert-page" style="display:flex; gap:20px; min-width: 100%; justify-content:center; flex-wrap:wrap;">
+        <div class="cert-card">
+          <img src="images/PYPS.jpg" alt="Coding Ninjas Round 1">
+          <div class="overlay">
+            <h3 style="font-size:20px;">HackerRank - Problem Solving (Python)</h3>
+            <p style="font-size:16px;">Key Skills: Algorithms, data structures, logical reasoning, Python programming<br>Completed in: 2023</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/PYPS.jpg')">View Certificate</span>
+            <a href="https://www.hackerrank.com/certificates/18e7dff6a2b8" style="padding-top: 10px;">Certificate Link</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/SQLBASIC.png" alt="Coding Ninjas Round 2">
+          <div class="overlay">
+            <h3 style="font-size:20px;">HackerRank - SQL Basic</h3>
+            <p style="font-size:16px;">Key Skills: SELECT queries, filtering, aggregate functions, joins<br>Completed in: 2025</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/SQLBASIC.png')">View Certificate</span>
+            <a href="https://www.hackerrank.com/certificates/f320f38e4afd" style="padding-top: 10px;">Certificate Link</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/SQLINTER.png" alt="Python Basics">
+          <div class="overlay">
+            <h3 style="font-size:20px;">HackerRank - SQL Intermediate</h3>
+            <p style="font-size:16px;">Key Skills: Subqueries, set operations, advanced joins, data manipulation<br>Completed in: 2025</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/SQLINTER.png')">View Certificate</span>
+            <a href="https://www.hackerrank.com/certificates/ecd2dcb4f6e3" style="padding-top: 10px;">Certificate Link</a>
+          </div>
+        </div>
+      </div>
+           <div class="cert-page" style="display:flex; gap:20px; min-width: 100%; justify-content:center; flex-wrap:wrap;">
+        <div class="cert-card">
+          <img src="images/SQLADV.png" alt="Coding Ninjas Round 1">
+          <div class="overlay">
+            <h3 style="font-size:20px;">HackerRank - SQL Advanced</h3>
+            <p style="font-size:16px;">Key Skills: Complex queries, window functions, performance optimization<br>Completed in: 2024</p>
+            <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/SQLADV.png')">View Certificate</span>
+            <a href="https://www.hackerrank.com/certificates/8d1973edeaaa" style="padding-top: 10px;">Certificate Link</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="images/AWS.jpg" alt="Python Basics">
+          <div class="overlay">
+            <h3 style="font-size:20px;">AWS Certified Cloud Practitioner</h3>
+    <p style="font-size:16px;">
+      Key Skills: Cloud fundamentals, security, networking, billing & pricing <br>
+      Completed in: 2022
+    </p>
+    <span style="background:black; color:white; border-radius:20px; cursor:pointer;" onclick="openModal('images/AWS.jpg')">View Certificate</span>
+    <a href="https://www.credly.com/go/fKtC2U0j" style="padding-top: 10px;" target="_blank">Digital Badge</a>         
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button id="pBtn" 
+      style="position: absolute; top: 50%; left: 0px; transform: translateY(-50%);
+      background: rgba(162, 209, 244, 0.6); color: white; border: none; width: 35px;
+      padding-top: 35px; padding-bottom: 35px; font-size: 16px; border-radius: 80%;
+      display: flex; align-items: center; justify-content: center; cursor: pointer; z-index:100;">&#10094;
+    </button>
+
+    <button id="nBtn" 
+      style="position: absolute; top: 50%; right: 0px; transform: translateY(-50%);
+      background: rgba(162, 209, 244, 0.6); color: white; border: none; width: 35px;
+      padding-top: 35px; padding-bottom: 35px; font-size: 16px; border-radius: 80%;
+      display: flex; align-items: center; justify-content: center; cursor: pointer; z-index:100;">&#10095;
+    </button>
+  </div>
+</section>
+
+
+</style>
+
+<!-- JS -->
+<script>
+  let currentPage = 0;
+  const pages = document.getElementById('cert-pages');
+  const totalPages = pages.children.length;
+
+  function nextPage() {
+    if (currentPage < totalPages - 1) {
+      currentPage++;
+      pages.style.transform = `translateX(-${currentPage * 100}%)`;
+    }
+  }
+
+  function prevPage() {
+    if (currentPage > 0) {
+      currentPage--;
+      pages.style.transform = `translateX(-${currentPage * 100}%)`;
+    }
+  }
+
+  document.getElementById("nBtn").addEventListener("click", nextPage);
+  document.getElementById("pBtn").addEventListener("click", prevPage);
+
+  function openModal(imgSrc) {
+    const modal = document.createElement('div');
+    modal.style.position = 'fixed';
+    modal.style.top = 0;
+    modal.style.left = 0;
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.background = 'rgba(0,0,0,0.8)';
+    modal.style.display = 'flex';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+    modal.style.zIndex = 1000;
+    modal.onclick = () => document.body.removeChild(modal);
+
+    const img = document.createElement('img');
+    img.src = imgSrc;
+    img.style.maxWidth = '80%';
+    img.style.maxHeight = '80%';
+    img.style.borderRadius = '8px';
+    modal.appendChild(img);
+    document.body.appendChild(modal);
+  }
+</script>
+
+<section id="skills" class="skills-section">
+  <h2>MY SKILLS</h2>
+  <div class="underline"></div>
+<p style="font-size:18px; padding: 10px; color:#333;">
+    	These are the technical skills I’ve developed in computer science, highlighting my expertise 
+	and areas of focus.</p>
+  <div class="skills-container">
+
+    <!-- Programming Languages -->
+    <div class="skill-card">
+      <i class="icon">🧑‍💻</i>
+      <h3>Programming Languages</h3>
+      <div class="skill-buttons">
+        <a href="https://www.geeksforgeeks.org/c-programming-language/">C</a>
+        <a href="https://www.geeksforgeeks.org/c-plus-plus/">C++</a>
+        <a href="https://www.geeksforgeeks.org/java/">Java</a>
+        <a href="https://www.w3schools.com/python/">Python</a>
+        <a href="https://www.w3schools.com/sql/">SQL</a>
+        <a href="https://www.geeksforgeeks.org/swift-programming-language/">Swift</a>
+        <a href="https://www.w3schools.com/typescript/typescript_intro.php">TypeScript</a>
+      </div>
+    </div>
+
+    <!-- Development Tools -->
+    <div class="skill-card">
+      <i class="icon">🧰</i>
+      <h3>Development Tools</h3>
+      <div class="skill-buttons">
+        <a href="https://code.visualstudio.com/docs">Visual Studio Code</a>
+        <a href="https://www.jetbrains.com/pycharm/learn/">PyCharm</a>
+        <a href="https://www.eclipse.org/documentation/">Eclipse</a>
+        <a href="https://netbeans.apache.org/kb/docs/">Netbeans</a>
+        <a href="https://jupyter.org/documentation">Jupyter Lab</a>
+        <a href="https://developer.apple.com/xcode/">XCode</a>
+        <a href="https://developer.android.com/studio/intro">Android Studio</a>
+      </div>
+    </div>
+
+    <!-- Data Visualization Tools -->
+    <div class="skill-card">
+      <i class="icon">📊</i>
+      <h3>Data Visualization Tools</h3>
+      <div class="skill-buttons">
+        <a href="https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview">PowerBI</a>
+        <a href="https://www.tableau.com/learn/training">Tableau</a>
+        <a href="https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_us_mixed_search_brand_exact_&km_CPC_CampaignId=1457964857&km_CPC_AdGroupID=57044764032&km_CPC_Keyword=lucid%20chart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433231228&km_CPC_TargetID=kwd-55720648523&km_CPC_Country=1020590&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gad_campaignid=1457964857&gbraid=0AAAAADLdSjDP53KNGj-iWqH7b-PWgHYw1&gclid=CjwKCAjwuePGBhBZEiwAIGCVS4UZf-5QvGvRvoohcEg1MyoGPF-7dbnslvgB4Ez2W3D-LUSn8uSmVhoCds0QAvD_BwE">LucidChart</a>
+        <a href="https://www.uml-diagrams.org/">UML</a>
+        <a href="https://support.microsoft.com/en-us/excel">Excel (Advanced)</a>
+        <a href="https://support.microsoft.com/en-us/office">MS Project & Office Suite</a>
+      </div>
+    </div>
+
+    <!-- Web Technologies -->
+    <div class="skill-card">
+      <i class="icon">🌐</i>
+      <h3>Web Technologies</h3>
+      <div class="skill-buttons">
+        <a href="https://www.w3schools.com/html/">HTML5</a>
+        <a href="https://www.w3schools.com/css/">CSS3</a>
+        <a href="https://www.w3schools.com/js/">JavaScript</a>
+        <a href="https://getbootstrap.com/docs/">Bootstrap</a>
+        <a href="https://www.w3schools.com/php/">PHP</a>
+        <a href="https://www.w3schools.com/xml/">XML</a>
+        <a href="https://www.w3schools.com/js/js_json_intro.asp">JSON</a>
+      </div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="skill-card">
+      <i class="icon">🧱</i>
+      <h3>Frameworks</h3>
+      <div class="skill-buttons">
+        <a href="https://nodejs.org/en/docs/">Node.js</a>
+        <a href="https://flask.palletsprojects.com/en/2.3.x/tutorial/">Flask</a>
+        <a href="https://developer.apple.com/documentation/uikit">UIKit</a>
+        <a href="https://spring.io/projects/spring-boot">Spring Boot</a>
+        <a href="https://reactnative.dev/docs/getting-started">React Native</a>
+      </div>
+    </div>
+
+    <!-- Cloud / VCS -->
+    <div class="skill-card">
+      <i class="icon">☁️</i>
+      <h3>Cloud / VCS</h3>
+      <div class="skill-buttons">
+        <a href="https://aws.amazon.com/getting-started/">AWS</a>
+        <a href="https://devcenter.heroku.com/start">Heroku</a>
+        <a href="https://docs.github.com/en/get-started">Github</a>
+        <a href="https://git-scm.com/docs">Git Bash</a>
+        <a href="https://desktop.github.com/">Git Desktop</a>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <i class="icon">💻</i>
+      <h3>Operating Systems</h3>
+      <div class="skill-buttons">
+        <a href="https://www.microsoft.com/windows">Windows</a>
+        <a href="https://www.linux.org/pages/download/">Linux</a>
+        <a href="https://developer.apple.com/ios/">iOS</a>
+        <a href="https://www.apple.com/macos/">macOS</a>
+        <a href="https://www.android.com/">Android</a>
+      </div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="skill-card">
+      <i class="icon">💾</i>
+      <h3>Databases</h3>
+      <div class="skill-buttons">
+        <a href="https://www.mongodb.com/docs/">MongoDB</a>
+        <a href="https://www.mysql.com/">MySQL</a>
+        <a href="https://www.oracle.com/database/">Oracle</a>
+        <a href="https://firebase.google.com/docs">Firebase</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <h2 style="font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 2px;
+  margin-top: -30px;
+  margin-bottom: 10px;">PROJECTS</h2>
+  <div class="underline"></div>
+<p style="font-size:18px; padding: 10px; color:#333;">
+This section showcases the projects I’ve worked on, highlighting my skills, creativity, and problem-solving abilities. Use the left and 
+right hover areas to scroll through, and hover over a project to view more details and GitHub links.
+</p>
+  <div class="project-carousel">
+    <div class="project-track">
+      <div class="project-card" style="background-image: url('images/SENTIMENT.png');">
+        <div class="project-main">
+          <h1>SENTIMENT ANALYSIS MICROSERVICE</h1>
+          <p>
+            <b>Role:</b> Team Leader<br>
+            <b>Completed:</b> November 2022<br>
+            <b>Technologies Used:</b> Python, NLP, Flask, HTML, CSS, JavaScript, PyCharm<br>
+            <b>Domain:</b> Machine Learning
+          </p>
+        </div>
+
+        <div class="project-hover">
+          <h3>Project Description</h3>
+          
+          <p>
+            This solution creates a personalized user experience by predicting emotions from user input. 
+      Responses are analyzed and classified into categories like joy, sadness, anger, fear, love, or surprise. 
+      Based on the detected emotion, users are dynamically redirected to content that suits their mood. For instance, 
+      joy may lead to games or jokes, sadness to comforting movies, anger to anonymous writing platforms, 
+      fear to soothing music, love to meaningful stories, and surprise to engaging articles.
+      This application showcases how technology can understand emotions and provide relevant digital experiences, 
+      combining technical intelligence with a human touch. </p><br><br>
+          <div class="project-links">
+            <a href="https://github.com/12bhavani/SRESTA-Sentimental-Analysis-Microservice" target="_blank">GitHub Repo</a>
+            <a href="https://drive.google.com/drive/folders/120D0j64xY5xdlAoj7rzZOqS6EMjMOkCo?usp=drive_link" target="_blank">Demo & Documents</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" style="background-image: url('images/SCROLLING.png');">
+        <div class="project-main">
+          <h1>AUTOMATIC SCROLLING BY COLOUR DETECTION</h1>
+          <p>
+            <b>Role:</b> Team Leader<br>
+            <b>Completed:</b> February 2023<br>
+            <b>Technologies Used:</b> Python, Flask, OpenCV, PyAutoGUI, numpy, PyCharm<br>
+            <b>Domain:</b> Deep Learning
+          </p>
+        </div>
+
+        <div class="project-hover">
+          <h3>Project Description</h3>
+          <p>
+            This project is to develop a feature that enables touchless screen scrolling using color detection 
+      via a webcam. Implemented with Python, OpenCV, and PyAutoGUI, it detects a specified color (default green) 
+      and automatically scrolls the screen, allowing users to operate the monitor from a distance without 
+      a mouse or touchpad. The feature can be customized to detect any color of choice, offering 
+     flexibility and enhancing user convenience. It demonstrates contactless human-computer interaction and 
+     real-time responsiveness, improving accessibility and user experience.</p><br><br>
+          <div class="project-links">
+            <a href="https://github.com/12bhavani/Mini_proj">GitHub Repo</a>
+            <a href="https://drive.google.com/drive/folders/123Xqk_GmAdmASTN6-IOlMqIkd0MrIWOc?usp=drive_link">Demo & Documents</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" style="background-image: url('images/BLOCKCHAIN.png');">
+        <div class="project-main">
+          <h1>FORENSIC EVIDENCE MANAGEMENT</h1>
+          <p>
+            <b>Role:</b> Team Leader<br>
+            <b>Completed:</b> February 2024<br>
+            <b>Technologies Used:</b> Hyperledger Fabric, SHA-512, Python, Node.js, JavaScript, Flask, HTML, CSS, Bootstrap 4, Ganache<br>
+            <b>Domain:</b> Blockchain Technology
+          </p>
+        </div>
+
+        <div class="project-hover">
+          <h3>Project Description</h3>
+          <p>
+            This project develops a secure and tamper-proof forensic evidence management system using Hyperledger 
+                    Fabric blockchain. It digitalizes the chain of custody, ensuring that all evidence records are immutable 
+                    and cannot be altered without leaving a trace. By leveraging blockchain’s decentralized architecture and 
+                    cryptographic methods, the system guarantees confidentiality, integrity, and authenticity of digital evidence. 
+                    It effectively addresses challenges such as tampering, unauthorized access, and manipulation, providing a robust, 
+                    reliable, and technologically advanced solution for modern forensic evidence management.
+                    </p>
+          <br><br>
+          <div class="project-links">
+            <a href="https://github.com/12bhavani/Major-Proj">GitHub Repo</a>
+            <a href="https://drive.google.com/drive/folders/1FJAj9285F6kfiJN7csVVadTzVQHJqkwQ?usp=drive_link">Demo & Documents</a>
+          </div>
+        </div>
+      </div>      
+      
+      <div class="project-card" style="background-image: url('images/POLLUTION.png');">
+        <div class="project-main">
+          <h1>POLLUTION DETECTOR APP</h1>
+          <p>
+            <b>Role:</b> Team Leader<br>
+            <b>Completed:</b> April 2025<br>
+            <b>Technologies Used:</b> iOS (UIKit), Swift, XCode, AVFoundation, UserNotifications, UIKit frameworks<br>
+            <b>Domain:</b> Mobile Application Development
+          </p>
+        </div>
+
+        <div class="project-hover">
+          <h3>Project Description</h3>
+          <p>
+            This project is an iOS application that enables users to assess pollution 
+      levels across Air, Water, Land, and Noise categories. Users enter relevant environmental data, and the app 
+      calculates pollution severity using scientific formulas, classifying it as Low, Moderate, High, or Extreme. The 
+      app provides real-time alert notifications to keep users informed about hazardous conditions. Along with the 
+      results, it displays contextual videos and guidance. For example, if pollution levels are high, it suggests a 
+      video guidance with precautions and safety measures to minimize health risks. 
+      The interface is designed to be user-friendly and with easy navigation for actionable insights to promote 
+      environmental awareness and safety.</p>
+          <div class="project-links">
+            <a href="https://github.com/12bhavani/PollutionDetector">GitHub Repo</a>
+            <a href="https://drive.google.com/drive/u/0/folders/1GWI76x99cv9ZyULbzi0YtgXPQRkPhmmx">Demo & Documents</a>
+          </div>
+        </div>
+      </div>      
+      <div class="project-card" style="background-image: url('images/WELLNESS.png');">
+        <div class="project-main">
+          <h1>BEARCAT WELLNESS APP</h1>
+          <p>
+            <b>Role:</b> Team Leader<br>
+            <b>Completed:</b> December 2025 (Expected)<br>
+            <b>Technologies Used:</b> React Native, TypeScript, Firebase, Expo, DialogFlow, TypeScript<br>
+            <b>Domain:</b> Mobile Application Development both for Android and iOS
+          </p>
+        </div>
+
+        <div class="project-hover">
+          <h3>Project Description</h3>
+          <p>
+This project develops a cross-platform mobile application for Northwest Missouri State University 
+      students to manage wellness efficiently. Built with React Native, TypeScript, Firebase, Expo, and 
+      DialogFlow, the app enables secure login, appointment booking, health report tracking, notifications, 
+      staff messaging, and AI chatbot support. The system emphasizes security, performance, maintainability, 
+      and a user-friendly interface, providing a comprehensive, accessible solution for student wellness 
+      management. By integrating real-time notifications and AI assistance, the app ensures timely support 
+      and personalized experiences, streamlining day-to-day health management for students.
+          </p><br><br>
+          <div class="project-links">
+            <a href="https://github.com/12bhavani/GDP_FinalProjectRepo">GitHub Repo</a>
+            <a href="https://drive.google.com/drive/u/0/folders/1pgXIGypqyHCCUtvAFQEkcTzeux_aAOiJ">Demo & Documents</a>
+          </div>
+        </div>
+      </div>    
+        <!-- CARD 2 -->
+      <div class="project-card" style="background-image: url('images/COLOUR.png');">
+        <div class="project-main">
+          <h1>AUTOMATIC SCROLLING BY COLOUR DETECTION</h1>
+          <p>
+            <b>Role:</b> Team Leader<br>
+            <b>Completed:</b> February 2023<br>
+            <b>Technologies Used:</b> Python, Flask, OpenCV, PyAutoGUI<br>
+            <b>Domain:</b> Deep Learning
+          </p>
+        </div>
+
+        <div class="project-hover">
+          <h3>Project Description</h3>
+          <p>
+            This project automates screen scrolling based on color recognition using OpenCV. 
+            It detects specific color gestures in real-time to trigger scrolling events, enhancing accessibility.
+          </p><br><br>
+          <div class="project-links">
+            <a href="#">GitHub Repo</a>
+            <a href="#">Demo & Documents</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const track = document.querySelector('.project-track');
+  const cards = document.querySelectorAll('.project-card');
+  let index1 = 0;
+  let scrollInterval;
+
+  function updateCarousel() {
+    const cardWidth = cards[0].offsetWidth + 30;
+    track.style.transform = `translateX(-${index1 * cardWidth}px)`;
+  }
+
+  function startScroll(direction) {
+    stopScroll();
+    scrollInterval = setInterval(() => {
+      if (direction === "right") {
+        if (index1 < cards.length - 1) {
+          index1++;
+          updateCarousel();
+        } else {
+          stopScroll(); 
+        }
+      } else if (direction === "left") {
+        if (index1 > 0) {
+          index1--;
+          updateCarousel();
+        } else {
+          stopScroll(); 
+        }
+      }
+    }, 300);
+  }
+
+  function stopScroll() {
+    clearInterval(scrollInterval);
+  }
+
+  document.querySelector('.project-carousel').addEventListener('mousemove', e => {
+    const { left, width } = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - left;
+
+    if (x < width * 0.2) {
+      startScroll('left');
+    } else if (x > width * 0.8) {
+      startScroll('right');
+    } else {
+      stopScroll();
+    }
+  });
+
+  document.querySelector('.project-carousel').addEventListener('mouseleave', stopScroll);
+
+  window.addEventListener('resize', updateCarousel);
+</script>
+
+<section id="papers" class="papers-section">
+    <div>
+    <h2 style="font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 2px;
+  margin-bottom: 10px;">
+      PUBLICATIONS & CONFERENCE PRESENTATIONS
+    </h2>
+    <div style="width: 80px; height: 4px; background: #0077ff; margin: 0 auto; border-radius: 2px;"></div>
+
+    <p style="font-size:18px; padding: 10px; color:#333;">
+     This section highlights my publications, papers I wrote and conference presentations, 
+	showcasing my contributions to research and knowledge sharing. Hover on item for more details.</p>
+	 </p>
+  </div>
+
+  <div class="papers-grid">
+    <!-- CARD 1 -->
+    <div class="paper-card" style="background-image: url('images/Pink.png');">
+      <div class="paper-main">
+        <h3>THE RISE OF AGENTIC AI: A REVIEW OF DEFINITIONS, FRAMEWORKS, ARCHITECTURES, APPLICATIONS, EVALUATION METRICS, AND CHALLENGES</h3>
+      </div>
+      <div class="paper-hover">
+      <h5>THE RISE OF AGENTIC AI: A REVIEW OF DEFINITIONS, FRAMEWORKS, ARCHITECTURES, APPLICATIONS, EVALUATION METRICS, AND CHALLENGES</h5>
+      <p style="font-size: 14px"> Authors: Ajay Bandi, Bhavani Kongari, Roshini Naguru, Sahitya Pasnoor, Sri Vidya Vilipala
+      <br>Publication Venue: Future Internet
+      <br>Publication Type: Project-Review Article
+      <br>Year: 2025</p>
+      <a href="#" target="_blank" class="paper-btn">Click to see publication</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="paper-card" style="background-image: url('images/yellow.png');">
+      <div class="paper-main">
+        <h3>AUTOMATIC SCROLLING BY COLOR DETECTION</h3>
+      </div>
+      <div class="paper-hover">
+<h5>AUTOMATIC SCROLLING BY COLOR DETECTION</h5>
+        <p style="font-size: 14px;">Authors: Joshi Padma, Kongari Bhavani, Inuganti Sri Charan, Kachara Meghana, Marri Varun Gopal Reddy
+      <br>Publication Venue: International Journal of Emerging Computer Science & Engineering (INTJECSE)
+      <br>Publication Type: Project-Based Research Article
+      <br>Year: 2023</h5> <br>
+      <a href="https://www.intjecse.net/article/AUTOMATIC+SCROLLING+BY+COLOR+DETECTION_6284/" target="_blank" class="paper-btn">Click to see publication</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="paper-card" style="background-image: url('images/Orange.png');">
+      <div class="paper-main">
+        <h3>AN IMPLEMENTATION OF BLOCK CHAIN TECHNOLOGY IN FORENSIC EVIDENCE MANAGEMENT</h3>
+      </div>
+      <div class="paper-hover">
+        <h5>AN IMPLEMENTATION OF BLOCK CHAIN TECHNOLOGY IN FORENSIC EVIDENCE MANAGEMENT</h5>
+        <p style="font-size: 14px;">Authors: Joshi Padma, Kongari Bhavani, Inuganti Sri Charan, Kachara Meghana, Marri Varun Gopal Reddy
+      <br>Publication Venue: INTJECSE
+      <br>Publication Type: Project-Based Research Article
+      <br>Year: 2024</p>
+      <a href="https://www.int-jecse.net/article/AN+IMPLEMENTATION+OF+BLOCK+CHAIN+TECHNOLOGY+IN+FORENSIC+EVIDENCE+MANAGEMENT_6885/" target="_blank" class="paper-btn">Click to see publication</a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="paper-card" style="background-image: url('images/blue.png');">
+      <div class="paper-main">
+        <h3>ENHANCING USER AUTHENTICATION IN IOS APPS</h3>
+      </div>
+      <div class="paper-hover">
+<h5>ENHANCING USER AUTHENTICATION IN IOS APPS</h5>
+        <p style="font-size: 14px;">Author: Bhavani Kongari
+      <br>Type: Research Article
+      <br>Year: 2025</p>
+       <a href="https://drive.google.com/drive/folders/10uEGobYXHOhyx45kV_Cn3VClrcP51LJ7?usp=sharing" target="_blank" class="paper-btn">Click to see details</a>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="paper-card" style="background-image: url('images/Green.png');">
+      <div class="paper-main">
+        <h3>BLUE BRAIN TECHNOLOGY</h3>
+      </div>
+      <div class="paper-hover">
+<h5>BLUE BRAIN TECHNOLOGY</h5>
+       <p style="font-size: 14px;"> Presented by: Bhavani Kongari
+      <br>Presentation Venue: Sreyam 2k23 (Technical Conference held by Sreyas Insti. of Engi. and Tech.)
+      <br>Presentation Type: Technical Seminar Presentation
+      <br>Year: 2023 </p>
+      <a href="https://drive.google.com/drive/folders/1EZTMuw1bvNy_5K_j5dGlWCUt_cvC2-nP?usp=sharing" target="_blank" class="paper-btn">Click for presentation details</a>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="paper-card" style="background-image: url('images/purple.png');">
+      <div class="paper-main">
+        <h3>INTELLIGENT BIONICS: AI AND NANOTECHNOLOGY ENABLED ARTIFICIAL ORGAN</h3>
+      </div>
+      <div class="paper-hover">
+        <h5>INTELLIGENT BIONICS: AI AND NANOTECHNOLOGY ENABLED ARTIFICIAL ORGAN</h5>
+        <p style="font-size: 14px;">Presented by: Bhavani Kongari, Roshini Naguru, Gayatri Netepalli
+      <br>Supervisor: Dr. Aziz Fellah
+      <br>Presentaion Venue: MINK-WIC Conference 2025
+      <br>Presentaion Type: Poster Presentation
+      <br>Year: 2025</p>
+      <a href="https://drive.google.com/drive/u/0/folders/1DR7IBW6rYihwjih-PEDuFEvqkPmcgDdO" target="_blank" class="paper-btn">Click for presentation details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HTML -->
+ <div style="background-color: lavender;">
+    <h2 style="font-size: 2.5rem;text-align: center;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 2px;
+  margin-top: -20px;
+  margin-bottom: 4px;
+  text-align: center;">EXPERIENCE</h2>
+    <div class="underline"></div>
+    <p style="font-size:18px; padding: 10px; color:#333;text-align: center;margin-bottom: -10px; padding-bottom: 50px;">
+      This section highlights my professional experience so far, 
+showcasing the roles I’ve held and the responsibilities I’ve undertaken.
+    </p>
+  </div>
+<section id="experience" class="internship">
+    
+
+  <div class="internship-image">
+    <img src="images/INTERN.png" alt="Team working on project">
+  </div>
+
+  <div class="internship-content">
+    <h2>Software Intern - Maruti Cortex Ltd, India.</h2>
+    <h4>Dec 2023 – May 2024</h4>
+
+    <p>During my final semester of my Bachelors, I worked as a Software Intern where I:</p>
+
+    <ul>
+      <li>Developed and maintained Python scripts for data processing tasks.</li>
+      <li>Used SQL to query, manipulate, and analyze data in a Data Warehouse.</li>
+      <li>Participated in Agile methodology by attending daily scrum calls and completing tasks within sprints.</li>
+      <li>Managed version control with GitHub for collaborative development.</li>
+      <li>Gained exposure to project management tools like Jira, while also working with HTML and CSS for front-end tasks.</li>
+    </ul>
+
+    <p><strong>Technologies:</strong> Python, SQL, GitHub, Jira, HTML, CSS</p>
+
+    <p>This internship gave me valuable hands-on experience in Python and SQL, while strengthening my overall technical and teamwork skills.</p>
+  </div>
+</section>
+
+
+<section class="experience-section right-image">
+  <div class="experience-text">
+    <h2>Northwest Missouri State University</h2>
+    <h3 style="text-decoration: solid;">Graduate Assistant </h4>
+<p><strong>- Graduate Assistant for course Theory & Implementation of Prog Lang for Professor Dr. Aziz Fellah and for course Advanced Topics in Database Systems for Professor Dr. Keli Cheng. 20 August 2025<br>
+- Graduate Assistant for Project Management for Professor Dr. Aziz Fellah. 19 May 2025 - 24 June 2025<br>
+- Graduate Assistant for Advanced Topics in Database Systems for Professor Dr. Keli Cheng.	10 Jan 2025 - 5 May 2025</strong></p> 										    
+    <ul>
+      <li>To assist Professor while taking classes and in preparing assignments and their keys along with the rubrics.</li>
+      <li>To grade student assignments after deeply evaluating their work.</li>
+      <li>Maintain and update grade book along with providing feedback to students on their work.</li>
+      <li>To conduct help sessions to help students solve their problems related to the course.</li>
+      <li>To help the professor as a proctoring assistant while conducting exams and in-class activities.</li>
+    </ul>
+</div>
+
+  <div class="experience-photo">
+    <img src="images/GA.png" alt="Research Intern Team">
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div>
+    <h2 style="font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;">GET IN TOUCH</h2>
+    <div class="underline"></div>
+  </div>
+
+
+  <div class="contact-social" aria-hidden="false">
+    <div class="contact-icons" role="navigation" aria-label="social links">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="contact-icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:youremail@example.com" target="_blank" rel="noopener" aria-label="Email" class="contact-icon">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="contact-icon">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-card">
+      <h3>Feel free to leave a message, I will get back to you soon.</h3>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="fullName" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Message</label>
+          <textarea name="message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  const EMAILJS_PUBLIC_KEY = "DppgUco-nOcCwvQPo";
+  const EMAILJS_SERVICE_ID = "service_ngfwy4b";
+  const EMAILJS_TEMPLATE_ID = "template_ngmzhls";
+
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const fullName = form.elements["fullName"].value;
+      const email = form.elements["email"].value;
+      const message = form.elements["message"].value;
+
+      const params = {
+        title: "New Contact Message",
+        name: fullName,
+        email: email,
+        message: message,
+        time: new Date().toLocaleString()
+      };
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
+        .then(() => {
+          alert("✅ Message sent successfully!");
+          form.reset();
+        })
+        .catch((error) => {
+          alert("❌ Failed to send message. Check console for details.");
+          console.error("EmailJS Error:", error);
+        });
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
