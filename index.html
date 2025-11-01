@@ -628,13 +628,14 @@ const leftZone = document.querySelector('.hover-zone.left');
 const rightZone = document.querySelector('.hover-zone.right');
 
 let scrollInterval;
+let leftActive = false;
+let rightActive = false;
 
 leftZone.addEventListener('mouseenter', () => {
   scrollInterval = setInterval(() => {
     carousel.scrollLeft -= 8;
   }, 10);
 });
-
 rightZone.addEventListener('mouseenter', () => {
   scrollInterval = setInterval(() => {
     carousel.scrollLeft += 8;
@@ -644,7 +645,27 @@ rightZone.addEventListener('mouseenter', () => {
 leftZone.addEventListener('mouseleave', () => clearInterval(scrollInterval));
 rightZone.addEventListener('mouseleave', () => clearInterval(scrollInterval));
 
+leftZone.addEventListener('click', () => {
+  clearInterval(scrollInterval);
+  leftActive = !leftActive;
+  if (leftActive) {
+    scrollInterval = setInterval(() => {
+      carousel.scrollLeft -= 8;
+    }, 10);
+  }
+});
+
+rightZone.addEventListener('click', () => {
+  clearInterval(scrollInterval);
+  rightActive = !rightActive;
+  if (rightActive) {
+    scrollInterval = setInterval(() => {
+      carousel.scrollLeft += 8;
+    }, 10);
+  }
+});
 </script>
+
 
 <section id="papers" class="papers-section">
     <div>
