@@ -1347,3 +1347,44 @@ html {
   .project-card { flex: 0 0 260px; height: 340px; }
   .button { padding: 10px 15px; font-size: 0.9rem; }
 }
+
+
+.resume-btn {
+  background-color: rgb(244, 244, 124);
+  color: black;
+  padding: 10px 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 0.5px solid black;
+}
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.resume-btn:hover {
+  background-color: rgb(211, 208, 208);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .resume-btn {
+    font-size: 16px;
+    padding: 12px 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
